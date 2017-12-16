@@ -1,3 +1,7 @@
+# File:        Backend.py
+# Description: This class reads in the CSV data files created by FileGenerator.py and uses the PySpark library 
+#              to run Linear Regression algorithms and predict Fantasy Points for a particular NBA Player 
+
 # Import all libraries required for setting up Spark and functions required for Spark DF (dataframe) manipulation
 from pyspark import SparkContext
 from pyspark.sql import SparkSession, SQLContext
@@ -16,6 +20,13 @@ from datetime import datetime, timedelta
 # Define Backend class which will be used as an object by the FrontendGUI
 class Backend:
 
+    Longer class information....
+    Longer class information....
+
+    Attributes:
+        likes_spam: A boolean indicating if we like SPAM or not.
+        eggs: An integer count of the eggs we have laid.
+#    """
     # Set up instance field required on intitial run
     def __init__(self):
 
@@ -111,7 +122,7 @@ class Backend:
     # Calculate the Fantasy Points for a particular player given ID and all the games
     def predictPlayerFP(self,id, games):
 
-        # Obtain the players minutes, turnovers and personal fouls as a list
+        # Obtain the player's minutes, turnovers and personal fouls as a list
         average = self.playerAVG.where(col("ID")==id).select("MINS","TOV","PF").collect()[0]
 
         # Find all games played by the player and append average stat as well as an empty FP field

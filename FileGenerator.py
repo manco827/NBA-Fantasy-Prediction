@@ -1,3 +1,7 @@
+# File:        FileGenerator.py
+# Description: This file creates CSV files with historical player data and team data. These files will be used by Backend.py
+#              to predict Fantasy Points
+
 # Import all necessary libraries
 import pandas as pd # Used for data processing and manipulation
 from nba_py import player # Access to API used to retrieve NBA data

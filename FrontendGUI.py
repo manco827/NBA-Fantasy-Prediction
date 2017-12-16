@@ -133,7 +133,8 @@ class NBA_Fantasy_Prediction:
         self.btnCALCULATE.configure(text='''Calculate FP''')
         self.btnCALCULATE.configure(command=self.calculateFP)
 
-        # Creates the "Update Model" button which updates the data files with the latest season data
+        # Creates the "Update Model" button which updates the linear regression model using data
+        # latest data from the current season
         self.btnUPDATE = Button(self.Frame1)
         self.btnUPDATE.place(relx=0.63, rely=0.1, height=52, width=127)
         self.btnUPDATE.configure(activebackground="#d9d9d9")
@@ -235,7 +236,7 @@ class NBA_Fantasy_Prediction:
         self.Scrolledlistbox2.delete(selection[0])
 
     def updateModel(self):
-        # Updates model with current season data
+        # Updates the linear regression model with the latest data from the season data
         curSeason = "2017-18"
         self.backend.updateModel(curSeason)
 

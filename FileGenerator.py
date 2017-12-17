@@ -13,7 +13,7 @@ playerAvgDF = pd.DataFrame()
 curSeason = '2017-18'
 
 # Creates an S3 client to upload files to S3
-s3 = boto3.client('s3', aws_access_key_id='AKIAIWHJAEPCAYUY74IA', aws_secret_access_key='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')
+s3 = boto3.client('s3', aws_access_key_id='********************', aws_secret_access_key='****************************************')
 bucket = 'hadoop-data-bucket'
 
 # Iterate through season list and retrieve data

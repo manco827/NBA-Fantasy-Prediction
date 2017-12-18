@@ -11,4 +11,4 @@ This project utilizes 4 main datafiles:
 1) [Season]Data.csv - Contains Fantasy Points and game data for every single player for every single game during a particular season
 2) GameSchedule.csv - Contains every single game of the current (2017-18) season, listing the date and time of the match, as well as the oppoenents and the location
 3) PlayerAVG.csv - Lists every single player's game statistics averaged over the current (2017-18) season
-4) PlayerList__2017-18.csv - Lists every single player that is active in the current (2017-18) season
+4) PlayerList_2017-18.csv - Lists every single player that is active in the current (2017-18) season
